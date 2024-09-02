@@ -1,38 +1,165 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background: linear-gradient(72deg, #5fb1c7, #5fb1c7, #9657c3, #9657c3, #c4609d, #c4609d, #c46068, #c46068, #c2d03e, #c2d03e, #6bc460, #6bc460);
+  background-size: 2400% 2400%;
+  animation: gradient 30s ease infinite;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none !important;
+}
+.icon-bar {
+  /* width: 90px; */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+  flex:10%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon-bar a {
+  display: block;
+  text-align: left;
+  padding: 20px;
+  transition: all 0.3s ease;
+  color: #2d4d05;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #d3d5d0;
+}
+
+.active {
+  background-color: #c0ebf3;
+}
+
+.navbar {
+  color: #2d4d05;
+  box-shadow: 0 8px 10px -6px #414141;
+  background-color: #c3cfae;
+
+}
+.navbar a:hover{
+  background-color: #d3d5d0;
+
+}
+.student-container > div, .offcanvas  {
+  background-color: #c3cfae;
+  box-shadow: 4px 4px 10px -2px #414141;
+
+}
+
+@keyframes gradient {
+  0%{background-position:0% 52%}
+  50%{background-position:100% 49%}
+  100%{background-position:0% 52%}
+}
+
+@keyframes gradient {
+  0%{background-position:0% 52%}
+  50%{background-position:100% 49%}
+  100%{background-position:0% 52%}
+}
+.body {
+  flex:95%;
+  flex-direction: row;
+}
+
+.row {
+ margin-right: 15px !important;
+ margin-left: 15px !important;
+}
+.tile-grid{
+  display: grid;
+  grid-template-columns:repeat(4, 1fr);  
+  gap: 20px;  
+}
+.student-container {
+  height: 270px;
+  padding: 20px;
+  margin: 15px;
+}
+.student-container > div {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+  line-height: 20px;
+  font-size: 15px;
+  border-radius: 20px;
+  color: rgb(50, 53, 48);
+}
+.student-container > div:hover {
+  transform: translateX(20px) scale(1.1);
+  background: #d3d5d0;
+  border: 1px solid #3d7049;
+}
+.student-tile{
+ padding: 10px; 
+}
+ h3 {
+  margin: 10px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: #2d4d05;
+
+}
+i {
+  margin: 10px;
+  font-size: 15px;
+}
+.edit-btn{
+  margin-left: auto; 
+  margin-right: 0;
+}
+.fa-flag:hover {
+  color: green;
+  transform: scale(1.2);
+}
+.fa-trash:hover {
+  color: red;
+  transform:  scale(1.2);
+}
+.fa-pencil:hover {
+  color: orange;
+  transform: scale(1.2);
+}
+#customized-dialog-title{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #2d4d05;
+}
+.profile-image > img{
+  width:60px;
+  height:auto;
+}
+DialogContent > .row{
+  display:flex;
+  display-direction: column;
+  
+}
+DialogContent > .col{
+  flex:45%;
+}
+p > h5{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #2d4d05;
+}
+.css-c09uja-MuiPaper-root-MuiDialog-paper{
+  background-color: #d3d5d0 !important;
+}
+hr {
+  display: block;
+  content: '';
+  height:   15px;
+  background-image: -webkit-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -moz-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: radial-gradient(farthest-side at center top, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
 }
