@@ -32,7 +32,7 @@ export default function CustomizedDialogs({open, onClose, userData}) {
         open={open}
       >
         <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
-        <div className="profile-image"><img src="/img/profileImage.png" alt="profile image" /> {userData.name}</div> 
+        <div className="profile-image"><img src="/img/profileImage.png" alt="profile" /> {userData.name}</div> 
         </DialogTitle>
         <IconButton
           aria-label="close"

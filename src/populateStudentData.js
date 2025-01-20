@@ -10,7 +10,7 @@ const GetStudentData = () => {
   const [data, setData] = useState({}); 
 
   useEffect(() => {
-    fetch('https://freetestapi.com/api/v1/students?limit=20')
+    fetch('/api/v1/students?limit=20')
       .then((res) => {
         return res.json();
       })
