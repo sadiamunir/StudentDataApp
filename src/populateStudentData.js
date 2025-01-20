@@ -10,14 +10,19 @@ const GetStudentData = () => {
 
   // Fetch students data on component mount
   const fetchStudents = async () => {
+    const url = "https://www.freetestapi.com/api/v1/students?limit=20";
     try {
-      const response = await fetch('/api/students');
-      const data = await response.json(); 
-      setItems(data);  // Set the fetched data to state 
-      console.log(data); // Log data to verify
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`Response status: ${response.status}`);
+      }
+
+      const json = await response.json();
+      setItems(json);
     } catch (error) {
-      console.error('Error fetching data:', error);
+      console.error(error.message);
     }
+
   };
 
   useEffect(() => {
