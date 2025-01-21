@@ -1,3 +1,7 @@
+#About this app
+A single-page website that displays student data in visually appealing cards arranged in a grid format. Each card represents a student, showcasing key details such as name, and basic info. The middle icon at the bottom of each card allows users to click and open a detailed record, providing more in-depth information like grades, courses, and personal data. The layout is clean, responsive, and easy to navigate for quick access to individual student records.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
